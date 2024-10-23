@@ -19,7 +19,7 @@ app.post('/exchange_token', async (req, res) => {
   try {
     const response = await axios.post('https://github.com/login/oauth/access_token', {
       client_id: 'Ov23liE7ASL9VKMNIArS',
-      //client_secret: '42d99542cd23e89b91406353d972d150f4785ed6', //¡¡SECRET KEY UNCOMENT!!
+      client_secret: '42d99542cd23e89b91406353d972d150f4785ed6',
       code: code
     }, {
       headers: {
